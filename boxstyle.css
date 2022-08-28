@@ -1,0 +1,50 @@
+body{
+    background: lightgray;
+}
+/* specify dimensions for all boxes in the page */
+.box{
+    width: 200px;
+    height: 200px;
+}
+.greenbox{
+    /* colors a box green */
+    background: green;
+}
+.redbox{
+    /* colors a box red */
+    background: red;
+}
+.bluebox{
+    /* colors a box blue */
+    background: blue;
+}
+.violetbox{
+    /* colors a box violet */
+    background: violet;
+}
+.yellowbox{
+    /* colors a box yellow */
+    background: yellow;
+}
+/* use @media handle to implement a media query */
+@media (max-width: 1200px)
+{
+    /* to modify greenbox */
+    .greenbox{
+        background: orange;
+    }
+    /* modify the redbox to display a red circle*/
+    .redbox{
+        border-radius: 50%; /* rounds the edges!!! */
+        border: solid 2px black;
+    }
+    /* make the bluebox do something fun! */
+    .bluebox{
+        transform: rotate(360deg);
+        transition: transform 2.0s ease-in;
+    }
+    /* make the violetbox disappear */
+    .violetbox{
+        display: none;
+    }
+}
