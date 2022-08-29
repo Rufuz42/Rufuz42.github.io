@@ -12,6 +12,7 @@
 
     <!-- External style sheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="navstyle.css">
     <!-- internal style sheet example
     <style>
         h1{
@@ -21,7 +22,7 @@
     -->
   </head>
   <body>
-    <ul class="nav nav-pills nav-fill">
+    <ul class="nav nav-pills nav-fill primaryNav">
         <li class="nav-item">
             <a href="index.html">Home</a>
         </li>
@@ -56,6 +57,26 @@
             <a href="mediaquerydemo.html">Media Query Demo</a>
         </li>
       </ul>
+
+      <div class="dropdown show secondaryNav">
+        <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Navigation List
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="index.html">Home</a>
+          <a class="dropdown-item" href="headings.html">Heading Demo</a>
+          <a class="dropdown-item" href="textdemo.html">Text Demo</a>
+          <a class="dropdown-item" href="unorderedlist.html">Unordered List Demo</a>
+          <a class="dropdown-item" href="orderedlist.html">Ordered List Demo</a>
+          <a class="dropdown-item" href="tabledemo1.html">Table Demo 1</a>
+          <a class="dropdown-item" href="tabledemo2.html">Table Demo 2 - Pets</a>
+          <a class="dropdown-item active" href="cssdemo.html">CSS Demo</a>
+          <a class="dropdown-item" href="travel.html">Dream Vacation Page</a>
+          <a class="dropdown-item" href="bootstrapdemo.html">Bootstrap Demo</a>
+          <a class="dropdown-item" href="mediaquerydemo.html">Media Query Demo</a>
+        </div>
+      </div>
+
     <h1 class = "blue">MAKE ME BLUE</h1>
     <h1 id = "purple">MAKE ME PURPLE</h1>
     <h1 class = "red">MAKE ME RED</h1>
